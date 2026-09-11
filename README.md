@@ -71,3 +71,7 @@ GCP-BigQuery-Geospatial-Pipeline/
 The SQLX files use `__GCP_PROJECT__`, `__GCS_BUCKET__`, and `__DATASET__` placeholders. The notebook fills them in from `config.json` when it uploads the definitions.
 
 Data: Wisconsin school directory data (public) and `bigquery-public-data.geo_us_boundaries`.
+
+---
+
+*Date finished: December 14, 2025*
