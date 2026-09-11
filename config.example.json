@@ -1,0 +1,7 @@
+{
+  "project": "your-gcp-project",
+  "bucket": "your-bucket",
+  "dataset": "wi_schools",
+  "region": "us-central1",
+  "dataform_repository": "wi-schools-pipeline"
+}

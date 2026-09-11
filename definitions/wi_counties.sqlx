@@ -1,0 +1,11 @@
+config {
+  type: "table",
+  schema: "__DATASET__",
+  name: "wi_counties"
+}
+
+SELECT
+  county_name,
+  county_geom
+FROM `bigquery-public-data.geo_us_boundaries.counties`
+WHERE state_fips_code = '55'

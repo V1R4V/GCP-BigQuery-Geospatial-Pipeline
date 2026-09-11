@@ -1,0 +1,17 @@
+.DS_Store
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+
+# Local config (project id, bucket) and credentials
+config.json
+*.pem
+*.key
+*credentials*.json
+service-account*.json

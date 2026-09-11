@@ -1,0 +1,13 @@
+config {
+  schema: "__DATASET__",
+  type: "table",
+  name: "wi_county_schools"
+}
+
+SELECT
+  s.*,
+  ST_GEOGPOINT(s.longitude, s.latitude) AS location,
+  c.county_name AS county_name
+FROM ${ref("schools")} AS s
+JOIN ${ref("wi_counties")} AS c
+ON ST_CONTAINS(c.county_geom, ST_GEOGPOINT(s.longitude, s.latitude))

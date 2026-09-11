@@ -1,0 +1,12 @@
+config {
+  schema: "__DATASET__",
+  type: "operations",
+  hasOutput: true,
+  name: "schools"
+}
+
+LOAD DATA OVERWRITE `__GCP_PROJECT__.__DATASET__.schools`
+FROM FILES (
+  format = 'PARQUET',
+  uris = ['gs://__GCS_BUCKET__/wi-schools-raw.parquet']
+)

@@ -1,0 +1,6 @@
+jupyter
+pandas
+pyarrow
+google-cloud-bigquery
+google-cloud-dataform
+db-dtypes
